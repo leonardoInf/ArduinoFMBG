@@ -1,2 +1,2 @@
 # ArduinoFMBG
-![ArduinoFMBG Logo](materialien/logoSmall.png)
+![ArduinoFMBG Logo](Materialien/logoSmall.png)
