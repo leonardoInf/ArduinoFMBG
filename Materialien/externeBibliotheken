@@ -1,9 +1,0 @@
-Keypad: https://github.com/Chris--A/Keypad
-Adafruit Sensor: https://github.com/adafruit/Adafruit_Sensor
-DHT-sensor-library: https://github.com/adafruit/DHT-sensor-library
-Mein Fork von BigNumber: https://github.com/mondlos/BigNumber
-HC-SR04: https://github.com/Martinsos/arduino-lib-hc-sr04
-Adafruit_SSD1306: https://github.com/adafruit/Adafruit_SSD1306 (bei Verwendung eines I2C-LCD)
-Adafruit GFX: https://github.com/adafruit/Adafruit-GFX-Library (bei Verwendung eines I2C-LCD)
-BMP180 Breakout: https://github.com/sparkfun/BMP180_Breakout_Arduino_Library
-FHT: http://wiki.openmusiclabs.com/wiki/ArduinoFHT#Files
