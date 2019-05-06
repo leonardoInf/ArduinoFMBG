@@ -25,17 +25,17 @@ Man kann über I2C weitere Daten an die Messbox schicken (für externe Sensoren)
 ## Abhängigkeiten
 
 | Bibliothek    | Autor      | Funktion    |
-| ------------- |:-------------:| :-----|
+| ------------- |:-------------:| :-----:|
+| [Adafruit GFX](https://github.com/adafruit/Adafruit-GFX-Library)    | [adafruit](https://github.com/adafruit)      | Grafikbiblitohek für Adafruit-LCDs    |
+| [Adafruit_SSD1306](https://github.com/adafruit/Adafruit_SSD1306)    | [adafruit](https://github.com/adafruit)      | Bedienung von SSD1306-LCDs
 | [Adafruit Sensor](https://github.com/adafruit/Adafruit_Sensor)      | [adafruit](https://github.com/adafruit)      | Basis für BMP180 und DHT11   |
-| [BMP180 Breakout](https://github.com/sparkfun/BMP180_Breakout_Arduino_Library)     | [sparkfun](https://github.com/sparkfun)
+|[BigNumber (mein Fork)](https://github.com/leonardoInf/BigNumber)     | [nickgammon](https://github.com/nickgammon)     | speicherintensive Berechnungen    |
+| [BMP180 Breakout](https://github.com/sparkfun/BMP180_Breakout_Arduino_Library)     | [sparkfun](https://github.com/sparkfun)     | Bedienung des BMP180   |
+|[DHT-sensor-library](https://github.com/adafruit/DHT-sensor-library)     |  [adafruit](https://github.com/adafruit)   |  Bedienung des DHT11   |
+[HC-SR04](https://github.com/Martinsos/arduino-lib-hc-sr04)     | [Martinos](https://github.com/Martinsos)     | Bedienung des HC-SR04     |
 | [Keypad](https://github.com/Chris--A/Keypad)     | [Chris--A](https://github.com/Chris--A) | Navigation mit dem Keypad |
-| zebra stripes | are neat      |    $1 |
 
-Diese Bibliotheken müssen über die Arduino-IDE importiert werden
+##### Hinweis: 
+Standardmäßig wird ein 16x2 LiquidCrystal-LCD verwendet.\
+Adafruit GFX und Adafruit SSD1306 werden nur benötigt, wenn man ein I2C-LCD einsetzen möchte. 
 
-
-DHT-sensor-library https://github.com/adafruit/DHT-sensor-library
-Mein Fork von BigNumber https://github.com/mondlos/BigNumber
-HC-SR04 https://github.com/Martinsos/arduino-lib-hc-sr04
-Adafruit_SSD1306 https://github.com/adafruit/Adafruit_SSD1306 (bei Verwendung eines I2C-LCD)
-Adafruit GFX https://github.com/adafruit/Adafruit-GFX-Library (bei Verwendung eines I2C-LCD)
