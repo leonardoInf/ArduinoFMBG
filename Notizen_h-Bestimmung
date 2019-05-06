@@ -1,0 +1,25 @@
+
+Kathodenmaterial    Austrittsarbeit in eV     maximale Quantenausbeute
+
+Ba                  1,8                       0.17
+
+Cs                  1,94                      0.29
+
+K                   2,25                      0.18
+
+Na                  2,28                      0.28
+
+Al                  4,20 (blaze it)           0.30
+
+Zn                  4,27                      0.21
+
+Cu                  4,48                      0.23
+
+Hinweise: 
+Alle Fotoplatten haben eine Fläche von 2 cm^2, die von der Lichtquelle gleichermaßen bestrahlt wird.
+
+Während die Austrittsarbeiten realistisch sind, wurden die maximalen Quantenausbeuten der Einfachheit halber zufällig gewählt (zw. 15-30 %). Tatsächlich schwankt die Quantenausbeute je nach Bauform stark.
+
+[Es wurde davon ausgegangen, dass mit (betragsmäßig) kleinerer Gegenspannung der Fotostrom exponentiell zum maximalen Fotostrom steigt, welcher die Schranke (Sättigungswert) darstellt. ] 
+
+

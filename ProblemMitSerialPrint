@@ -1,0 +1,20 @@
+Problem: Blockierung des Seriellen Portes/Arduino hängt sich für wenige Sekunden auf
+Rekonstruktion: DIP-Schalter auf 1/2/3/4 stellen und Arduino einschalten
+Lösung: DIP-Schalter auf 3/4, Neustart, Zurück auf 1/2/3/4
+
+Problem: Serielle Daten werden nicht richtig eingelsen
+Rekonstruktion:
+
+for(int i = 0; i < Serial.available(); i++){
+    int z = Serial.read();
+    Serial.println(z+1);
+}
+
+Lösung:
+int av = Serial.available();
+for (int i = 0; i<av; i++){
+    int z = Serial.read();
+    Serial.println(z+1);
+}  
+
+Erklärung: Da die einzelnen Zeichen gelsen werden, ändert sich natürlich auch der Rückgabewert von Serial.available(), weshalb dies für die for-Schleife nicht geeignet ist und man im Vorraus eine zusützliche Varioable definieren muss.
