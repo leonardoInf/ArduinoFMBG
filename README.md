@@ -33,7 +33,7 @@ Man kann über I2C weitere Daten an die Messbox schicken (für externe Sensoren)
 | [BMP180 Breakout](https://github.com/sparkfun/BMP180_Breakout_Arduino_Library)     | [sparkfun](https://github.com/sparkfun)     | Bedienung des BMP180   |
 |[DHT-sensor-library](https://github.com/adafruit/DHT-sensor-library)     |  [adafruit](https://github.com/adafruit)   |  Bedienung des DHT11   |
 [HC-SR04](https://github.com/Martinsos/arduino-lib-hc-sr04)     | [Martinos](https://github.com/Martinsos)     | Bedienung des HC-SR04     |
-| [Keypad](https://github.com/Chris--A/Keypad)     | [Chris--A](https://github.com/Chris--A) | Navigation mit dem Keypad |
+| [Keypad](https://playground.arduino.cc/Code/Keypad/#Download)     | [Mark Stanley](https://github.com/MarkStanley), [AlexanderBrevig](https://github.com/AlexanderBrevig), | Navigation mit dem Keypad |
 
 ##### Hinweis: 
 Standardmäßig wird ein 16x2 LiquidCrystal-LCD verwendet.\
