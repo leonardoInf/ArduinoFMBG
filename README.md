@@ -1,4 +1,5 @@
 # ArduinoFMBG
+[![Build Status](https://travis-ci.org/leonardoInf/ArduinoFMBG.svg?branch=master)](https://travis-ci.org/leonardoInf/ArduinoFMBG)
 ![ArduinoFMBG Logo](Materialien/logoSmall.png)
 
 Dieses Projekt ist im Rahmen meiner 5. Prüfungskomponente für das Abitur in Berlin entstanden. 
