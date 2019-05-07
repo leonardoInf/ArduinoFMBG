@@ -9,7 +9,7 @@ git:
   quiet: true
 env:
   global:
-     - ARDUINO_IDE_VERSION="1.8.8"
+     - ARDUINO_IDE_VERSION="1.8.9"
      - PRETTYNAME="ArduinoFMBG"
 # Optional, will default to "$TRAVIS_BUILD_DIR/Doxyfile"
 #    - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
@@ -18,7 +18,7 @@ before_install:
    - source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
 
 install:
-   - arduino --install-library "Adafruit ILI9341","Adafruit GFX Library"
+   - arduino --install-library "Adafruit GFX Library", "Adafruit SSD1306", "Adafruit Unified Sensor", "DHT sensor library", "Keypad"
 
 script:
    - build_main_platforms
