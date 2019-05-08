@@ -8,7 +8,8 @@ Dieses Projekt ist im Rahmen meiner 5. Prüfungskomponente für das Abitur in Be
 *Referenzfach:* Physik\
 *Bezugsfach:* Informatik
 
-Ziel war es, eine multifunktionale Plattform für den Einsatz von **Arduino-Sensoren im Physikunterricht** zu schaffen.
+Ziel war es, eine multifunktionale Plattform für den Einsatz von **Arduino-Sensoren im Physikunterricht** zu schaffen.\
+Eine Kopie der digitalen Präsentation kann [hier](mailto:mondloslp@gmail.com?subject=Kopie_der_Praesentation) angefordert werden.
 
 ## Funktionsumfang
 Die Messbox unterstützt folgende Sensoren
