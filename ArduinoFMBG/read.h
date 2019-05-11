@@ -64,12 +64,13 @@ int read_LCD_buttons(){
           case 'N':
             return btnRIGHT;
         }
-    } else return btnNONE;
+    }
   }
 
   #ifndef I2CLCD
 	int adc_key_in = analogRead(0);
 	if(adc_key_in > 1000) return btnNONE;
+  else  delay(200);
 	if(adc_key_in < 50) return btnRIGHT;
 	if(adc_key_in < 250) return btnUP;
 	if(adc_key_in < 400) return btnDOWN;
