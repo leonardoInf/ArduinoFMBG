@@ -1,6 +1,5 @@
-/*Header Datei, um Tasten einzulesen
+ /* Header Datei, um Tasten einzulesen
  * Erweitert, Original: https://www.velleman.eu/downloads/29/vma203_a4v02.pdf
- * Leonardo Braguinski, 5. PK Physik/Informatik
  * */
 
  #include "globals.h"
@@ -43,13 +42,6 @@ Keypad customKeypad = Keypad(makeKeymap(hexaKeys), rowPins, colPins, 1, 3);
 
 int read_LCD_buttons(){
   char key = customKeypad.getKey();
-  /*if (key){
-    if(extraKeypad == false){
-        extraKeypad = true;
-        return btnNONE;
-    }
-   } */
-
   if(extraKeypad){
     if(key){
       switch(key){
