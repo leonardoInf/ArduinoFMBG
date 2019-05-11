@@ -1,4 +1,4 @@
-# ArduinoFMBG
+# ArduinoPhysik
 ![ArduinoFMBG Logo](Materialien/logoSmall.png)
 
 [//]: # "[![Build Status](https://travis-ci.org/leonardoInf/ArduinoFMBG.svg?branch=master)](https://travis-ci.org/leonardoInf/ArduinoFMBG)"
