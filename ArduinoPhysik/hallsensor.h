@@ -1,9 +1,3 @@
- int nullabgleich(){
-   /* int aRead = analogRead(ANALOG2);
-    int diff = 512-aRead;
-    return diff/20;*/
-  }
-
 char * hallsensor(){
    aktivieren();
    int abgleich = nullabgleich();
