@@ -97,7 +97,7 @@ char * kondensator(){
     itoa(ladeZeit, ladeZeit_buf, 10);
     strcat(str_result, ladeZeit_buf);
     strcat(str_result, " ms");*/
-    strcpy(str_result, "U:5*e\242(-t/");
+    strcpy(str_result, "5*1-exp(-t/");
     String(tau/(float)1000, 2).toCharArray(tau_buf, 7);
     strcat(str_result, tau_buf);
     strcat(str_result, ")");
