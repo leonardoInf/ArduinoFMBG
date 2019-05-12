@@ -1,12 +1,5 @@
- int nullabgleich(){
-   /* int aRead = analogRead(ANALOG2);
-    int diff = 512-aRead;
-    return diff/20;*/
-  }
-
 char * hallsensor(){
    aktivieren();
-   int abgleich = nullabgleich();
    char str_result[40];
    float spannung = 3;
    char flussdichte_buf[6];
