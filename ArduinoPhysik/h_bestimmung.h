@@ -46,7 +46,7 @@ double handleFotostrom(){
     flaeche /= zehn.pow(vier); //2 cm^2
 
     //Leistung
-    BigNumber leistung = strahlungsleistung*flaeche;;
+    BigNumber leistung = strahlungsleistung*flaeche;
 
     //maximaler Photostrom
     BigNumber i_max = ausbeute * leistung * elementarladung/(h*frequenz);
