@@ -15,11 +15,9 @@ double MeasureVolume()
         byte j = ADCH;
         int k = ((int)j << 8) | m;
         int amp = abs(k-512);
-        soundVolMax = max(soundVolMax, amp);
-        soundVolAvg += amp;
         soundVolRMS += ((long)amp*amp);
     }
-    soundVolAvg /= anzahlSamples;
+    
     soundVolRMS /= anzahlSamples;
     soundVolRMS = sqrt(soundVolRMS);
     spl += 20*log10(soundVolRMS/p_ref);
