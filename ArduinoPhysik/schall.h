@@ -37,7 +37,7 @@ double MeasureVolume()
 //*******                         *****                  
 
 char * schall(){
-    if(aktivieren()){
+    /*if(aktivieren()){
       Serial.println("aktiviert");
       DIDR0 = 0; DIDR2 = 0;   //digitale Eingänge für analoge Pins deaktivieren           
       ADMUX |=  ANALOG1 % 8;
@@ -50,9 +50,8 @@ char * schall(){
       /*Auswahl des Free-Runnnig-Modus ermöglichen 
       * siehe: AtMega2560 Handbuch S. 287 
       * */
-      ADCSRA |= _BV(ADATE);
+     /* ADCSRA |= _BV(ADATE);
    }
-    char str_result[40];
     char spl_buf[5];
     char p_buf[10];
     double spl = MeasureVolume();
@@ -83,6 +82,9 @@ char * schall(){
     }
     else{
         strcat(str_result, "MIN       ");
-      }
+      }*/
+      char str_result[40];
+      strcpy(str_result, "Zurzeit defekt;");
+      strcat(str_result, " ");
     return str_result; 
 }
