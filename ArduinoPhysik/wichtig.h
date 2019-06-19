@@ -1,3 +1,7 @@
+#include "globals.h"  //KONFIGURATIONEN befinden sich hier
+#include "Sensoren.h"
+#include "read.h"
+
 // *** Abhängigkeiten     ****
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
@@ -18,12 +22,6 @@
 #include <Wire.h>
 #include <Adafruit_SSD1306.h>
 #endif
-
-//Eigene Dateien
-#include "globals.h"  //KONFIGURATIONEN befinden sich hier
-#include "Sensoren.h"
-#include "read.h"
-// ***
 
 // ***                    ****
 
