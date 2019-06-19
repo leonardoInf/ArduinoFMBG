@@ -1,7 +1,3 @@
-#include "globals.h"  //KONFIGURATIONEN befinden sich hier
-#include "Sensoren.h"
-#include "read.h"
-
 // *** Abhängigkeiten     ****
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
@@ -9,6 +5,10 @@
 #include <BigNumber.h>    
 #include <HCSR04.h>       //Entfernung (Ultraschall)
 #include <SFE_BMP180.h>   //Luftdruck
+
+#include "globals.h"  //KONFIGURATIONEN befinden sich hier
+#include "Sensoren.h"
+#include "read.h"
 
 #ifndef I2CLCD
 #include <LiquidCrystal.h>
