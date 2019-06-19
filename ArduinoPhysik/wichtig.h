@@ -6,6 +6,11 @@
 #include <HCSR04.h>       //Entfernung (Ultraschall)
 #include <SFE_BMP180.h>   //Luftdruck
 
+#include "globals.h"  //KONFIGURATIONEN befinden sich hier
+#include "Sensoren.h"
+#include "read.h"
+// ***
+
 #ifndef I2CLCD
 #include <LiquidCrystal.h>
 #endif
@@ -18,12 +23,6 @@
 #include <Wire.h>
 #include <Adafruit_SSD1306.h>
 #endif
-
-//Eigene Dateien
-#include "globals.h"  //KONFIGURATIONEN befinden sich hier
-#include "Sensoren.h"
-#include "read.h"
-// ***
 
 // ***                    ****
 
@@ -187,7 +186,7 @@ void lokalAusfuehren(char screen[]){
     case 1:
       screen = luftdruck(); break;
     case 2:
-      screen = fadenpendel(); break;
+      screen = pendel(); break;
     case 3:
       screen = schall(); break;
     default:

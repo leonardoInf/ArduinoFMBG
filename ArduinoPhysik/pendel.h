@@ -23,7 +23,7 @@ float frequenzMessen(int d_max){
 
 
 char * pendel(){
-  char str_result[50];
+  static char str_result[50];
   char max_abstand_buf[5];
   static char frequenz_buf[8];
   char n_buf[2];

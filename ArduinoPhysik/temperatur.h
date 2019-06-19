@@ -1,5 +1,5 @@
 char * temperatur(){
-  char str_result[40];
+  static char str_result[40];
   float temperatur;
   int luftfeuchtigkeit;
   char temperatur_buf[6];

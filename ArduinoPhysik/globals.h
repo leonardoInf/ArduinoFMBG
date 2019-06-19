@@ -5,10 +5,10 @@
 
 // ***  zusätzliche Optionen   ****
 //#define ERWEITERT
-//#define I2CLCD
-//#define UNO
+#define I2CLCD
+#define UNO
 //#define WLAN
-//#define SERIELLE_AUSGABE
+#define SERIELLE_AUSGABE
 //#define VIER_TASTEN_MATRIX 
 // ***                         ****
 

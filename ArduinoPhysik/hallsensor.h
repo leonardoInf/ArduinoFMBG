@@ -1,6 +1,6 @@
 char * hallsensor(){
    aktivieren();
-   char str_result[40];
+   static char str_result[40];
    float spannung = 3;
    char flussdichte_buf[6];
    spannung = analogRead(ANALOG1)-80;

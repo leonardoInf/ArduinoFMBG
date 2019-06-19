@@ -1,6 +1,9 @@
 //#if defined(WLAN) || defined(SERIELLE_AUSGABE) 
   Serial.begin(9600);
-  DIDR0 = 0; DIDR2 = 0;       //Analoge Pins konfigurieren
+  DIDR0 = 0;          //Analoge Pins konfigurieren
+  #ifdef UN0
+  DIDR2 = 0;
+  #endif          
   //#endif
   #ifdef SERIELLE_AUSGABE
   Serial.println("zSerial alive");
