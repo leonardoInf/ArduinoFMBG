@@ -21,7 +21,7 @@ void lcdInitialisieren(){
     #endif
 }
 
-void lcdAusgabe(char str[], int newlines){
+void lcdAusgabe(const char str[], int newlines){
   lcdInitialisieren();
   for(int i = 0; i<strlen(str); i++){
      char c = str[i];

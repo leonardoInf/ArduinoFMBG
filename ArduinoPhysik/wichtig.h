@@ -2,7 +2,6 @@
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
 #include <DHT_U.h>        //
-#include <BigNumber.h>    
 #include <HCSR04.h>       //Entfernung (Ultraschall)
 #include <SFE_BMP180.h>   //Luftdruck
 
@@ -43,6 +42,8 @@
 #endif
 
 // *** Konstanten und Variablen für die h-Bestimmmung  ***
+#ifdef UNO
+#include <BigNumber.h>
 const BigNumber p_max PROGMEM = 5;  // 5 W/m^2
 const BigNumber zero PROGMEM = 0;
 const BigNumber eins PROGMEM = 1;
@@ -70,6 +71,7 @@ const char* symbole[] {
   BigNumber ausloesearbeit;
   BigNumber ausbeute;
   BigNumber wellenlaenge;
+#endif
 //***                                      ****
 
 // *** Globale Variablen (siehe globals.h) ****
@@ -172,11 +174,10 @@ void lokalAusfuehren(char screen[]){
 #endif
 
 #ifdef UNO
-char *optionen[] =  {"1. Temperatur/;Luftfeuchtigkeit",
+const char *optionen[] =  {"1. Temperatur/;Luftfeuchtigkeit",
                      "2. Luftdruck",
                      "3. Fadenpendel",
-                     "4. Schall",
-                     "5. Spannungsteiler"
+                     "4. Schall"
                     };
       const int anzahlOptionen = 5;
 void lokalAusfuehren(char screen[]){

@@ -38,7 +38,7 @@ double getTemperature(SFE_BMP180 *temperature){
 
 // ****                                 *****
 char * luftdruck(){
-    char str_result[40];
+    static char str_result[40];
     char luftdruck_buf[8];
     char temperatur_buf[6];
     static SFE_BMP180 sensor;

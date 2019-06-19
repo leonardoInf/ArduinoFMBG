@@ -32,8 +32,8 @@ extern int posK;
 extern int index;
 extern boolean allowInput;
 
+#ifndef UNO
 extern const BigNumber p_max PROGMEM;  // 5 W/m^2
-
 extern const BigNumber zero PROGMEM;
 extern const BigNumber eins PROGMEM;
 extern const BigNumber vier PROGMEM;
@@ -56,3 +56,4 @@ extern int m_index;
 extern BigNumber ausloesearbeit;
 extern BigNumber ausbeute;
 extern BigNumber wellenlaenge;
+#endif

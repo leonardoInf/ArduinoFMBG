@@ -83,7 +83,7 @@ char * schall(){
     else{
         strcat(str_result, "MIN       ");
       }*/
-      char str_result[40];
+      static char str_result[40];
       strcpy(str_result, "Zurzeit defekt;");
       strcat(str_result, " ");
     return str_result; 
