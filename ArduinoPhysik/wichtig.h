@@ -9,6 +9,7 @@
 #include "globals.h"  //KONFIGURATIONEN befinden sich hier
 #include "Sensoren.h"
 #include "read.h"
+// ***
 
 #ifndef I2CLCD
 #include <LiquidCrystal.h>
