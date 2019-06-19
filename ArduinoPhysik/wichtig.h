@@ -187,7 +187,7 @@ void lokalAusfuehren(char screen[]){
     case 1:
       screen = luftdruck(); break;
     case 2:
-      screen = fadenpendel(); break;
+      screen = pendel(); break;
     case 3:
       screen = schall(); break;
     default:
