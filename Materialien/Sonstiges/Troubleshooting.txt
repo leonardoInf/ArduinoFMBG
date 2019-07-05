@@ -28,3 +28,5 @@ Basis: https://github.com/adafruit/travis-ci-arduino
 - arduino --install-library <Abhängigkeit 1>
 ...
 - arduino --install-library <Abhängigkeit n>
+3. Abhängigkeiten die nicht im Bibliotheksverwalter vorhanden sind, werden mit
+git clone <URL> $HOME/arduino_ide/libraries/<Name> installiert
