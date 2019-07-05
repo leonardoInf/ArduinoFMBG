@@ -18,8 +18,11 @@ before_install:
 
 install:
    - arduino --install-library "Adafruit Unified Sensor"
+   - arduino --install-library "Adafruit GFX Library"
+   - arduino --install-library "Adafruit SSD1306"
    - arduino --install-library "DHT sensor library"
-   - arduino --install-library "Keypad" 
-   #- arduino --install-library "Adafruit Unified Sensor","Adafruit GFX Library", "Adafruit SSD1306", , "DHT sensor library", "Keypad"
+   - arduino --install-library "Keypad"
+   - arduino --install-library "HCSR04"
+   #- arduino --install-library "Adafruit Unified Sensor","Adafruit GFX Library", "Adafruit SSD1306", "DHT sensor library", "Keypad", "HCSR04"
 script:
    - build_main_platforms

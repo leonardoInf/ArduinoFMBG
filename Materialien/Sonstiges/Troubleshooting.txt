@@ -1,3 +1,5 @@
+== ArduinoFMBG ==
+
 Problem: Blockierung des Seriellen Portes/Arduino hängt sich für wenige Sekunden auf
 Rekonstruktion: DIP-Schalter auf 1/2/3/4 stellen und Arduino einschalten
 Lösung: DIP-Schalter auf 3/4, Neustart, Zurück auf 1/2/3/4
@@ -18,3 +20,11 @@ for (int i = 0; i<av; i++){
 }  
 
 Erklärung: Da die einzelnen Zeichen gelsen werden, ändert sich natürlich auch der Rückgabewert von Serial.available(), weshalb dies für die for-Schleife nicht geeignet ist und man im Vorraus eine zusützliche Varioable definieren muss.
+
+== travis ci ==
+Basis: https://github.com/adafruit/travis-ci-arduino
+1. Die Dokumentationsskripts funktionieren nicht -> auskommentieren/löschen
+2. Abhängigkeiten müssen in einzelnen Befehlen installiert werden:
+- arduino --install-library <Abhängigkeit 1>
+...
+- arduino --install-library <Abhängigkeit n>
