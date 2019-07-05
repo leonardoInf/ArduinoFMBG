@@ -5,10 +5,12 @@
 
 // ***  zusätzliche Optionen   ****
 //#define ERWEITERT
+#if defined(__AVR_ATmega328P__) 
 #define I2CLCD
 #define UNO
+#endif
 //#define WLAN
-#define SERIELLE_AUSGABE
+//#define SERIELLE_AUSGABE
 //#define VIER_TASTEN_MATRIX 
 // ***                         ****
 
