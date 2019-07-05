@@ -9,8 +9,7 @@ git:
   quiet: true
 env:
   global:
-     - ARDUINO_IDE_VERSION="1.8.9"
-     - PRETTYNAME="ArduinoFMBG"
+     - PRETTYNAME="ArduinoPhysik"
 # Optional, will default to "$TRAVIS_BUILD_DIR/Doxyfile"
 #    - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
 

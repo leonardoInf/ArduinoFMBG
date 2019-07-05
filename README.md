@@ -32,7 +32,6 @@ Man kann über I2C weitere Daten an die Messbox schicken (für externe Sensoren)
 [HC-SR04](https://github.com/Martinsos/arduino-lib-hc-sr04)     | [Martinos](https://github.com/Martinsos)     | Bedienung des HC-SR04     |
 | [Keypad](https://playground.arduino.cc/Code/Keypad/#Download)     | [MarkStanley](https://github.com/MarkStanley), [AlexanderBrevig](https://github.com/AlexanderBrevig)    | Navigation mit dem Keypad |
 
-##### Hinweis: 
 Standardmäßig wird ein 16x2 LiquidCrystal-LCD verwendet.\
 Adafruit GFX und Adafruit SSD1306 werden nur benötigt, wenn man ein I2C-LCD einsetzen möchte.
 
