@@ -40,27 +40,27 @@ Adafruit GFX und Adafruit SSD1306 werden nur benötigt, wenn man ein I2C-LCD ein
 ![ArduinoFMBG Softwarearchitektur](Materialien/software-architektur.PNG)
 
 **Grundlegendes:** Die Grundlage bilden char-Arrays der Länge 40. Sie werden von dem derzeit ausgewählten Sensor erbittet und auf dem LCD dargestellt. 
-Wenn das ausgewählte Modul die Darstellung auf dem LCD ändern möchte, muss es das entsprechende Array str_result[40] verändern. Auf Nutzereingaben wird mithilfe von globalen Variablen reagiert.
-Die Kommunikation erfolgt über die jeweiligen Dateien steurung_x.h. 
+Wenn das ausgewählte Modul die Darstellung auf dem LCD ändern möchte, muss es das entsprechende Array ``str_result[40]`` verändern. Auf Nutzereingaben wird mithilfe von globalen Variablen reagiert.
+Die Kommunikation erfolgt über die jeweiligen Dateien ``steuerung_x.h``. 
 
-``wichtig.h``: Abhängigkeiten, Implementierung der Konfiguration (siehe globals.h), Initialisierung der globalen Variablen, Initialisierung des Menüs
+``wichtig.h`` Abhängigkeiten, Implementierung der Konfiguration (siehe globals.h), Initialisierung der globalen Variablen, Initialisierung des Menüs
 
-``externeSensoren.h``: Tool, um 'Screens' (d.h. darzustellende Zeichenketten) per I2C zu empfangen
+``externeSensoren.h`` Tool, um 'Screens' (d.h. darzustellende Zeichenketten) per I2C zu empfangen
 
-``steuerung.h``: Hier ist fesgelegt, wie die einzelnen Module auf Nutzereingaben reagieren, hat viele Unterdateien
+``steuerung.h`` Hier ist fesgelegt, wie die einzelnen Module auf Nutzereingaben reagieren, hat viele Unterdateien
 
-``WLANWerkzeuge.h``: Befehle per WLAN erhalten (nur ESP8266X)
+``WLANWerkzeuge.h`` Befehle per WLAN erhalten (nur ESP8266X)
 
-``lcdWerkzeuge.h``: Schnittstelle: Code -> Dartellung
+``lcdWerkzeuge.h`` Schnittstelle: Code -> Dartellung
 
-``setup.h``: Initialisierung der Box
+``setup.h`` Initialisierung der Box
 
-``loop.h``: Die Hauptschleife. Sie erhält durchgehend Zeichenketten, welche dargestellt werden müssen und fetcht Nutzereingaben
+``loop.h`` Die Hauptschleife. Sie erhält durchgehend Zeichenketten, welche dargestellt werden müssen und fetcht Nutzereingaben
 
-``globals.h``: Enthält Deklaration globaler Variablen und Optionen zur Konfiguration der Box VOR der Kompilierung
+``globals.h`` Enthält Deklaration globaler Variablen und Optionen zur Konfiguration der Box VOR der Kompilierung
 
-``read.h``: Sorgt dafür, dass die Nutzereingaben vom Keypad in die Logik gelangen
+``read.h`` Sorgt dafür, dass die Nutzereingaben vom Keypad in die Logik gelangen
 
-``Sensoren.h``: Enthält die Implentierung der einzelnen Skripte für die Sensoren und Module. Je nach Konfiguration werden andere Module verwendet (u.a. wegen Speicherplatzproblem auf dem Arudino UNO). 
+``Sensoren.h`` Enthält die Implentierung der einzelnen Skripte für die Sensoren und Module. Je nach Konfiguration werden andere Module verwendet (u.a. wegen Speicherplatzproblem auf dem Arudino UNO). 
 
 
