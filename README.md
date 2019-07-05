@@ -3,7 +3,7 @@
 
 [//]: # "[![Build Status](https://travis-ci.org/leonardoInf/ArduinoFMBG.svg?branch=master)](https://travis-ci.org/leonardoInf/ArduinoFMBG)"
 
-Dies ist eine multifunktionale Plattform für den Einsatz von **Arduino-Sensoren im Physikunterricht**.\
+Dies ist eine multifunktionale Plattform für den Einsatz von **Arduino-Sensoren im Physikunterricht**.
 
 ## Funktionsumfang
 Die Messbox unterstützt folgende Sensoren
