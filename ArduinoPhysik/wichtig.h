@@ -176,7 +176,7 @@ void lokalAusfuehren(char screen[]){
 #ifdef UNO
 const char *optionen[] =  {"1. Temperatur/;Luftfeuchtigkeit",
                      "2. Luftdruck",
-                     "3. Fadenpendel",
+                     "3. Pendel",
                      "4. Schall"
                     };
       const int anzahlOptionen = 5;

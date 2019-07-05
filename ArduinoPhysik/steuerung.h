@@ -54,7 +54,19 @@ boolean handleKeypad(char key){
 boolean handleKeypad(char key){
   if(index == 0 && allowInput){ //Temperatur
     #include "steuerung_temperatur.h"
-
-  if(index == 1 && allowInput){  //Luftdruck
-    #include "steuerung_luftdruck"
   }
+  if(index == 1 && allowInput){  //Luftdruck
+    #include "steuerung_luftdruck.h"
+  }
+
+  if(index == 2 && allowInput){  //Pendel
+    #include "steuerung_pendel.h"
+  }
+
+  if(index == 3 && allowInput){  //Schall
+    #include "steuerung_schall.h"
+  }
+}
+#endif
+
+  
