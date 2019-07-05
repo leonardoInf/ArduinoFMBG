@@ -23,6 +23,6 @@ install:
    - arduino --install-library "DHT sensor library"
    - arduino --install-library "Keypad"
    - arduino --install-library "HCSR04"
-   #- arduino --install-library "Adafruit Unified Sensor","Adafruit GFX Library", "Adafruit SSD1306", "DHT sensor library", "Keypad", "HCSR04"
+   - arduino --install-library "Sparkfun BMP180"
 script:
    - build_main_platforms
