@@ -36,6 +36,9 @@ Man kann über I2C weitere Daten an die Messbox schicken (für externe Sensoren)
 Standardmäßig wird ein 16x2 LiquidCrystal-LCD verwendet.\
 Adafruit GFX und Adafruit SSD1306 werden nur benötigt, wenn man ein I2C-LCD einsetzen möchte.
 
+**ESP8266X:** Um für ESP8266 kompilieren zu können, muss ``http://arduino.esp8266.com/stable/package_esp8266com_index.json`` als Boardverwalter-URL unter *Voreinstellungen* hinzugefügt werden.
+Daraufhin muss im Boardverwalter das Board ``esp8266`` installiert werden.  
+
 ## Architektur
 ![ArduinoFMBG Softwarearchitektur](Materialien/software-architektur.PNG)
 
