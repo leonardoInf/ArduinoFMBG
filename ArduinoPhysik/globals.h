@@ -1,17 +1,17 @@
 /*
- * Globale Variablen für die Arduino-Messbox
- * Leonardo Braguinski, 5. PK Physik/Informatik
- */
+   Globale Variablen für die Arduino-Messbox
+   Leonardo Braguinski, 5. PK Physik/Informatik
+*/
 
 // ***  zusätzliche Optionen   ****
 //#define ERWEITERT
-#if defined(__AVR_ATmega328P__) 
+#if defined(__AVR_ATmega328P__)
 #define I2CLCD
 #define UNO
 #endif
 //#define WLAN
 //#define SERIELLE_AUSGABE
-//#define VIER_TASTEN_MATRIX 
+//#define VIER_TASTEN_MATRIX
 // ***                         ****
 
 // *** Pins                   ****
@@ -35,6 +35,7 @@ extern int index;
 extern boolean allowInput;
 
 #ifndef UNO
+#include <BigNumber.h>
 extern const BigNumber p_max PROGMEM;  // 5 W/m^2
 extern const BigNumber zero PROGMEM;
 extern const BigNumber eins PROGMEM;

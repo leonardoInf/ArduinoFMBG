@@ -43,7 +43,6 @@
 
 // *** Konstanten und Variablen für die h-Bestimmmung  ***
 #ifndef UNO
-#include <BigNumber.h>
 const BigNumber p_max PROGMEM = 5;  // 5 W/m^2
 const BigNumber zero PROGMEM = 0;
 const BigNumber eins PROGMEM = 1;

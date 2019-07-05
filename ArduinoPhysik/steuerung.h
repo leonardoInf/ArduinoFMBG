@@ -31,12 +31,13 @@ boolean handleKeypad(char key){
 	if(index == 4 && allowInput){	//Schall
 		#include "steuerung_schall.h"
 	}   
-
-	if(index == 6 && allowInput){  //Spannungsteiler
-      if(index == 5 && allowInput){  //Luftdruck
+  if(index == 5 && allowInput){  //Luftdruck
     #include "steuerung_luftdruck.h"
-  }		#include "steuerung_spannungsteiler.h"
   }
+  
+  if(index == 6 && allowInput){  //Spannungsteiler
+    #include "steuerung_spannungsteiler.h"
+  } 
 
   if(index == 7 && allowInput){  //Kondensator
 		      #include "steuerung_kondensator.h"

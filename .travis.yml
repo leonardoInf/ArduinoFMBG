@@ -23,11 +23,7 @@ install:
    - arduino --install-library "DHT sensor library"
    - arduino --install-library "Keypad"
    - arduino --install-library "HCSR04"
-   # https://stackoverflow.com/a/37923922/6455909
-   - if [ -d "$HOME/arduino_ide/libraries/BMP180" ]; then rm -Rf "$HOME/arduino_ide/libraries/BMP180"; fi
-   - if [ -d "$HOME/arduino_ide/libraries/BigNumber" ]; then rm -Rf "$HOME/arduino_ide/libraries/BigNumber"; fi
-   - git clone https://github.com/sparkfun/BMP180_Breakout_Arduino_Library.git $HOME/arduino_ide/libraries/BMP180
-   - git clone https://github.com/leonardoInf/BigNumber.git $HOME/arduino_ide/libraries/BigNumber
-
+   - if [! -d "$HOME/arduino_ide/libraries/BMP180" ]; then git clone https://github.com/sparkfun/BMP180_Breakout_Arduino_Library.git $HOME/arduino_ide/libraries/BMP180; fi
+   - if [! -d "$HOME/arduino_ide/libraries/BigNumber" ]; then git clone https://github.com/leonardoInf/BigNumber.git $HOME/arduino_ide/libraries/BigNumber; fi
 script:
    - build_main_platforms
