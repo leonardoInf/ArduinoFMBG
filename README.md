@@ -1,7 +1,7 @@
 # ArduinoPhysik
-![ArduinoFMBG Logo](Materialien/logoSmall.png)
+![ArduinoPhysik Logo](Materialien/logoSmall.png)
 
-[![Build Status](https://travis-ci.org/leonardoInf/ArduinoFMBG.svg?branch=master)](https://travis-ci.org/leonardoInf/ArduinoFMBG)
+[![Build Status](https://travis-ci.org/leonardoInf/ArduinoPhysik.svg?branch=master)](https://travis-ci.org/leonardoInf/ArduinoPhysik)
 
 Dies ist eine multifunktionale Plattform für den Einsatz von **Arduino-Sensoren im Physikunterricht**.
 
