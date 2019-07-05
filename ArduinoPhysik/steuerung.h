@@ -10,6 +10,7 @@ boolean VerlassenPruefen(char key){
    return false;
 }
 
+#ifndef UNO
 boolean handleKeypad(char key){
 	if(index == 0 && allowInput){	//Temperatur
 		#include "steuerung_temperatur.h"
@@ -31,12 +32,10 @@ boolean handleKeypad(char key){
 		#include "steuerung_schall.h"
 	}   
 
-	if(index == 5 && allowInput){	//Luftdruck
-		#include "steuerung_luftdruck.h"
-	}
-
 	if(index == 6 && allowInput){  //Spannungsteiler
-      		#include "steuerung_spannungsteiler.h"
+      if(index == 5 && allowInput){  //Luftdruck
+    #include "steuerung_luftdruck.h"
+  }		#include "steuerung_spannungsteiler.h"
   }
 
   if(index == 7 && allowInput){  //Kondensator
@@ -51,3 +50,11 @@ boolean handleKeypad(char key){
 
     return false;
 }
+#else 
+boolean handleKeypad(char key){
+  if(index == 0 && allowInput){ //Temperatur
+    #include "steuerung_temperatur.h"
+
+  if(index == 1 && allowInput){  //Luftdruck
+    #include "steuerung_luftdruck"
+  }
