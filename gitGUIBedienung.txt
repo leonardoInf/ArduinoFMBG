@@ -1,0 +1,4 @@
+GIT GUI Befehle
+
+Rescan: F5		(Auf Änderungen überprüfen)
+Stage: Ctrl+I 	(Änderungen registrieren)
