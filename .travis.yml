@@ -18,6 +18,8 @@ before_install:
 
 install:
    - arduino --install-library "Adafruit Unified Sensor"
+   - arduino --install-library "DHT sensor library"
+   - arduino --install-library "Keypad" 
    #- arduino --install-library "Adafruit Unified Sensor","Adafruit GFX Library", "Adafruit SSD1306", , "DHT sensor library", "Keypad"
 script:
    - build_main_platforms
