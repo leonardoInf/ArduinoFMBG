@@ -37,6 +37,6 @@ Standardmäßig wird ein 16x2 LiquidCrystal-LCD verwendet.\
 Adafruit GFX und Adafruit SSD1306 werden nur benötigt, wenn man ein I2C-LCD einsetzen möchte.
 
 ## Architektur
-![ArduinoFMBG Softwarearchitektur](Materialien/software-architektur.png)
+![ArduinoFMBG Softwarearchitektur](Materialien/software-architektur.PNG)
  
 
