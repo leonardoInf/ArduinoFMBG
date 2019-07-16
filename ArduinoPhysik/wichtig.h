@@ -58,14 +58,14 @@ const BigNumber materialien[][7] PROGMEM = {
 const char* symbole[] {
       "Ba", "Cs", "K", "Na", "Al", "Zn", "Cu"
   };
- const BigNumber minus_eins;
-  const BigNumber l_inc;
-  const BigNumber l_min;
-  const BigNumber l_max;
-  const BigNumber h;
-  const BigNumber c;
-  const BigNumber elementarladung;
-  const BigNumber nano;
+ BigNumber minus_eins;
+ BigNumber l_inc;
+ BigNumber l_min;
+ BigNumber l_max;
+ BigNumber h;
+ BigNumber c;
+ BigNumber elementarladung;
+ BigNumber nano;
   int m_index = 0;
   BigNumber ausloesearbeit;
   BigNumber ausbeute;
@@ -135,7 +135,7 @@ void lokalAusfuehren(char screen[]){
 #endif
 
 #if !defined(WLAN) && !defined(UNO)
-char *optionen[] =  {"1. Temperatur/;Luftfeuchtigkeit",
+const char *optionen[] =  {"1. Temperatur/;Luftfeuchtigkeit",
                      "2. Hallsensor",
                      "3. h-Bestimmung;Simulation",
                      "4. Pendel",

@@ -13,7 +13,7 @@ int kondensatorProzentBerechnen(int inc){
   }
 
 char * kondensator(){
-  char str_result[40];
+  static char str_result[40];
   char prozent_buf[5];
   char abweichung_buf[5];
   char inc_buf[5];
@@ -31,7 +31,7 @@ char * kondensator(){
               "100k\364", "1M\364"
     };
   const unsigned long widerstaendeLong[5] = {
-              1000, 10e3, 47e3, 100e3, 1000e3
+              (unsigned long)1000, (unsigned long)10e3, (unsigned long)47e3, (unsigned long)100e3, (unsigned long)1000e3
     };
 
   static unsigned long long ladeZeit = 0;

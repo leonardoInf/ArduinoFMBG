@@ -100,7 +100,7 @@ char * h_bestimmung(){
           minus_eins = -1;
       }
     
-   char str_result[40];
+   static char str_result[40];
    char spannung_buf[5];
    char intensitaet_buf[4];
    char wellenlaenge_buf[6];

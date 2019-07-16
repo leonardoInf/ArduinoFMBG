@@ -14,7 +14,7 @@ char * spannungsteiler(){
                         
                         
                         
- static char *voltages[50] = {  "3,43", "2,01", "3,37", "4,60", "1,87", 
+ static const char *voltages[50] = {  "3,43", "2,01", "3,37", "4,60", "1,87", 
                         "3,05", "3,50", "3,17", "4,89", "0,79",
                         "1,37", "1,56", "2,69", "3,76", "2,43",
                         "4,41", "2,70", "3,58", "2,99", "4,89",
@@ -33,7 +33,7 @@ char * spannungsteiler(){
      score++;
      randIndex = random(0,50-1);
   }
-  char str_result[40];
+  static char str_result[40];
   char scr_buf[4];
   char tol_buf[5];
   aktivieren();
