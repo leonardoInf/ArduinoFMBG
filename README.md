@@ -10,7 +10,7 @@ Dies ist eine multifunktionale Plattform für den Einsatz von **Arduino-Sensoren
 
 ## Funktionsumfang
 Die Messbox unterstützt folgende Sensoren
-1. Temperatur/;Luftfeuchtigkeit (basiert auf DHT-11)
+1. Temperatur/Luftfeuchtigkeit (basiert auf DHT-11)
 2. Hallsensor (Messung der magnetischen Flussdichte, basiert auf UGN3503)
 3. h-Bestimmung Simulation (viele Einstellmöglichkeiten)
 4. Pendel (einstellbare Erkennungsdistanz, basiert auf HC-SR04)
