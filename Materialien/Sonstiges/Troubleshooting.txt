@@ -1,8 +1,13 @@
 == ArduinoFMBG ==
 
-Problem: Blockierung des Seriellen Portes/Arduino hängt sich für wenige Sekunden auf
+Problem: Beim Mega2560 mit WLAN (RobotDyn) - Blockierung des Seriellen Portes/Arduino hängt sich für wenige Sekunden auf
 Rekonstruktion: DIP-Schalter auf 1/2/3/4 stellen und Arduino einschalten
 Lösung: DIP-Schalter auf 3/4, Neustart, Zurück auf 1/2/3/4
+
+Problem: LCD flackert nur und gibt nichts aus
+Rekonstruktion: LCD falsch in den Arduino stecken (z.B. äußere Pins bei A12 und D13)
+Lösung: LCD richtig in den Arduino stecken (aüßere Pins bei A5 und D3)
+
 
 Problem: Serielle Daten werden nicht richtig eingelsen
 Rekonstruktion:
