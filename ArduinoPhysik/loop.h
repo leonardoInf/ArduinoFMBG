@@ -48,7 +48,7 @@
        #ifdef WLAN
        sendWifi();
        #endif
-       if(handleKeypad(lcd_key)){
+       if(KeypadPruefen(lcd_key)){
           lcdLeeren();
           lcdAusgabe(optionen[index], 1);
         }
