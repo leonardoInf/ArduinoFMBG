@@ -6,6 +6,22 @@
   #else
     lcd_key = read_LCD_buttons();
   #endif
+
+if(rcvMode){
+        memset(str_result, 0, 40);     //globales str_result Array mit Nullen füllen (leeren)
+        if(index > 10)
+          screenErhalten();
+       else lokalAusfuehren();
+       lcdAusgabe(str_result, 3);
+       #ifdef WLAN
+       sendWifi();
+       #endif
+       if(KeypadPruefen(lcd_key)){
+          lcdLeeren();
+          lcdAusgabe(optionen[index], 1);
+          return;       //verhindern, dass zusätzlich noch die Eingaben im menu mode abgearbeitet werden
+        }
+    }
   
   if(buttonPressed(lcd_key) && !isactive){
     lcdLeeren();
@@ -38,19 +54,4 @@
       if(!rcvMode)
       lcdAusgabe(optionen[index], 1);
   }
-  
-    if(rcvMode){
-        memset(str_result, 0, 40);     //globales str_result Array mit Nullen füllen (leeren)
-        if(index > 10)
-          screenErhalten();
-       else lokalAusfuehren();
-       lcdAusgabe(str_result, 3);
-       #ifdef WLAN
-       sendWifi();
-       #endif
-       if(KeypadPruefen(lcd_key)){
-          lcdLeeren();
-          lcdAusgabe(optionen[index], 1);
-        }
-    }
    //delay(120);

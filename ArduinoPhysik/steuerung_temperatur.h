@@ -1,1 +1,3 @@
-if(VerlassenPruefen(key)) return true;
+if(VerlassenPruefen(key)){
+  return true;
+}

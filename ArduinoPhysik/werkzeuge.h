@@ -34,29 +34,6 @@ boolean aktivieren(){
     if(!isactive){
         isactive = true;
         allowInput = true;
-        #ifdef SERIELLE_AUSGABE
-        switch(index){
-           case 0:
-              Serial.print("Spannungsteiler"); break;
-           case 1:
-              Serial.print("Kondensator"); break;
-           case 2:
-              Serial.print("Temperatur"); break;
-           case 3:
-              Serial.print("Hall-Sensor"); break;
-           case 4:
-              Serial.print("h-Bestimmung"); break;
-           case 5:
-              Serial.print("Fadenpendel"); break;
-           case 6:
-              Serial.print("Schall"); break;
-           case 7:
-              Serial.print("Wetter");; break;
-           default:
-             ; 
-      }
-      Serial.println(" ausgewählt");
-      #endif
       return true;
       
   }   else return false;

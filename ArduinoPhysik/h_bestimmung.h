@@ -64,6 +64,7 @@ double handleFotostrom(){
     exponent *= spannung;
     BigNumber i_von_u =  (i_max+eins) - BigNumber(exp(exponent));
     i_von_u *= zehn.pow(6);   //A -> uA
+    #ifdef SERIELLE_AUSGABE
     Serial.print(i_max+eins);
     Serial.print(" - exp(");
     Serial.print(i_log, 10);
@@ -73,6 +74,7 @@ double handleFotostrom(){
     Serial.print(spannung);
     Serial.print(") = ");
     Serial.println(i_von_u);
+    #endif
     return double(i_von_u);
 }
 

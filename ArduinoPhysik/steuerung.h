@@ -3,6 +3,7 @@ boolean VerlassenPruefen(char key){
           isactive = false;
           rcvMode = false;
           #ifdef SERIELLE_AUSGABE
+          Serial.print("Es wird zum Menü gewechselt aus Modul ");
           Serial.println(index);
           #endif
           return true; 
