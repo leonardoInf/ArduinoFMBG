@@ -53,7 +53,7 @@ boolean KeypadPruefen(char key){
     return false;
 }
 #else 
-boolean handleKeypad(char key){
+boolean KeypadPruefen(char key){
   if(index == 0 && allowInput){ //Temperatur
     #include "steuerung_temperatur.h"
   }
