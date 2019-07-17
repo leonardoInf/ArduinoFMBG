@@ -1,16 +1,16 @@
-char * spannungsteiler(){
+void spannungsteiler(){
   static int score = 0;
   static int randIndex = random(0,50-1);
 
-  static int expectedInts[50] = {710, 415, 697, 951, 386, 630, 
-                        724, 655, 500, 164, 284, 323,
-                        556, 778, 503, 912, 558, 740, 
-                        618, 564, 647, 451, 658, 514,
-                        477, 377, 761, 230, 581, 155,
-                        930, 902, 210, 381, 122, 100,
-                        155, 653, 201, 458, 398, 127,
-                        437, 118, 674, 521, 492, 917,
-                        958, 59};
+  static const int expectedInts[50] = { 710, 415, 697, 951, 386, 630, 
+                                        724, 655, 500, 164, 284, 323,
+                                        556, 778, 503, 912, 558, 740, 
+                                        618, 564, 647, 451, 658, 514,
+                                        477, 377, 761, 230, 581, 155,
+                                        930, 902, 210, 381, 122, 100,
+                                        155, 653, 201, 458, 398, 127,
+                                        437, 118, 674, 521, 492, 917,
+                                        958, 59};
                         
                         
                         
@@ -33,7 +33,6 @@ char * spannungsteiler(){
      score++;
      randIndex = random(0,50-1);
   }
-  static char str_result[40];
   char scr_buf[4];
   char tol_buf[5];
   aktivieren();
@@ -50,6 +49,4 @@ char * spannungsteiler(){
   itoa(score, scr_buf, 10);
   strcat(str_result, scr_buf);
   strcat(str_result, "   ");
-  return str_result;
-  //memset(str_result, 0, 40);
 }

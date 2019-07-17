@@ -37,8 +37,7 @@ double getTemperature(SFE_BMP180 *temperature){
 }
 
 // ****                                 *****
-char * luftdruck(){
-    static char str_result[40];
+void luftdruck(){
     char luftdruck_buf[8];
     char temperatur_buf[6];
     static SFE_BMP180 sensor;
@@ -58,5 +57,4 @@ char * luftdruck(){
     dtostrf(temperatur, anzahlStellen(temperatur)+1, 1, temperatur_buf);
     strcat(str_result, temperatur_buf);
     strcat(str_result, "\337C");
-    return str_result; 
  }

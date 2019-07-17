@@ -36,7 +36,7 @@ double MeasureVolume()
 }
 //*******                         *****                  
 
-char * schall(){
+void schall(){
     /*if(aktivieren()){
       Serial.println("aktiviert");
       DIDR0 = 0; DIDR2 = 0;   //digitale Eingänge für analoge Pins deaktivieren           
@@ -83,8 +83,6 @@ char * schall(){
     else{
         strcat(str_result, "MIN       ");
       }*/
-      static char str_result[40];
       strcpy(str_result, "Zurzeit defekt;");
       strcat(str_result, " ");
-    return str_result; 
 }

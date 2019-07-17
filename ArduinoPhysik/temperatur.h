@@ -1,5 +1,4 @@
-char * temperatur(){
-  static char str_result[40];
+void temperatur(){
   float temperatur;
   int luftfeuchtigkeit;
   char temperatur_buf[6];
@@ -16,7 +15,6 @@ char * temperatur(){
   dht.humidity().getEvent(&event);
   luftfeuchtigkeit = event.relative_humidity;
   
-
   strcpy(str_result, "T: ");
   String(temperatur, 2).toCharArray(temperatur_buf, 6);
   strcat(str_result, temperatur_buf);
@@ -24,5 +22,4 @@ char * temperatur(){
   itoa(luftfeuchtigkeit, luftfeuchtigkeit_buf, 10);
   strcat(str_result, luftfeuchtigkeit_buf);
   strcat(str_result, " \45             ");
-  return str_result;
 }

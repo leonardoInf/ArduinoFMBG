@@ -77,7 +77,7 @@ double handleFotostrom(){
 }
 
 
-char * h_bestimmung(){
+void h_bestimmung(){
     if(aktivieren()){
           BigNumber::begin(38);
           h = 6.626;
@@ -100,7 +100,6 @@ char * h_bestimmung(){
           minus_eins = -1;
       }
     
-   static char str_result[40];
    char spannung_buf[5];
    char intensitaet_buf[4];
    char wellenlaenge_buf[6];
@@ -126,5 +125,4 @@ char * h_bestimmung(){
    strcat(str_result, "nm ");
    strcat(str_result, symbole[m_index]);
    strcat(str_result, "  ");
-   return str_result;
 }

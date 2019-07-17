@@ -1,4 +1,4 @@
- char * wetter(){
+void wetter(){
     char esp_in[10];
     char str_result[40];
     short tindex = 0;
@@ -24,5 +24,4 @@
     memmove(esp_in, esp_in+tindex, strlen(esp_in)-tindex + 1);
     strcat(str_result, esp_in);
     strcat(str_result, " \45     ");
-    return str_result;
-  }
+}

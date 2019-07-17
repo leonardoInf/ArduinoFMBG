@@ -22,8 +22,7 @@ float frequenzMessen(int d_max){
 }
 
 
-char * pendel(){
-  static char str_result[50];
+void pendel(){
   char max_abstand_buf[5];
   static char frequenz_buf[8];
   char n_buf[2];
@@ -83,6 +82,4 @@ char * pendel(){
     dtostrf(durchschnitt,4, 2, mittelwert_buf);
     strcat(str_result, mittelwert_buf);
   }
-    
-  return str_result;
 }

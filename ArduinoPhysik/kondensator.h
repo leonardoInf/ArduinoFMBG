@@ -12,8 +12,7 @@ int kondensatorProzentBerechnen(int inc){
     return 10*inc;
   }
 
-char * kondensator(){
-  static char str_result[40];
+void kondensator(){
   char prozent_buf[5];
   char abweichung_buf[5];
   char inc_buf[5];
@@ -79,13 +78,13 @@ char * kondensator(){
     strcat(str_result, prozent_buf);
     strcat(str_result, " \45");
     selfInc++;
-    return str_result;
+    return;
     }
     else{
       //tau = (ladeZeit/5);
       strcpy(str_result, "Fertig!        ;");
       strcat(str_result, "Dr\365cken Sie SEL");
-      return str_result;
+      return;
     }
   }
 
@@ -104,7 +103,7 @@ char * kondensator(){
     String(kapazitaetuF).toCharArray(kapazitaet_buf, 10);
     strcat(str_result, kapazitaet_buf);
     strcat(str_result, "\344F          ");
-    return str_result;  
+    return;  
   }
 
   if(posK == 5){

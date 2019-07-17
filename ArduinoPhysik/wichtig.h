@@ -74,6 +74,7 @@ const char* symbole[] {
 //***                                      ****
 
 // *** Globale Variablen (siehe globals.h) ****
+char str_result[40];
 boolean isactive = false;
 boolean tabelle = false;
 boolean MessungDurchfuehren = false;
@@ -108,26 +109,26 @@ const char *optionen[] PROGMEM=  {"1. Temperatur/;Luftfeuchtigkeit",
                      "9. Wetter"
                     };
      const int anzahlOptionen = 9;
-void lokalAusfuehren(char screen[]){
+void lokalAusfuehren(){
   switch(index){
     case 0:
-      screen = temperatur(); break;
+      temperatur(); break;
     case 1:
-      screen = hallsensor(); break;
+      hallsensor(); break;
     case 2:
-      screen = h_bestimmung(); break;
+      h_bestimmung(); break;
     case 3:
-      screen = pendel(); break;
+      pendel(); break;
     case 4:
-      screen = schall(); break;
+      schall(); break;
     case 5:
-      screen = luftdruck(); break;
+      luftdruck(); break;
     case 6:
-      screen = spannungsteiler(); break;
+      spannungsteiler(); break;
     case 7:
-      screen = kondensator(); break;
+      kondensator(); break;
     case 8:
-      screen = wetter(); break;
+      wetter(); break;
     default:
     ;  
   }    
@@ -148,24 +149,24 @@ const char *optionen[] =  {"1. Temperatur/;Luftfeuchtigkeit",
   #ifdef I2CLCD
     optionen[6] = "8- Spannungsteiler";
   #endif
-void lokalAusfuehren(char screen[]){
+void lokalAusfuehren(){
   switch(index){
     case 0:
-      screen = temperatur(); break;
+      temperatur(); break;
     case 1:
-      screen = hallsensor(); break;
+      hallsensor(); break;
     case 2:
-      screen = h_bestimmung(); break;
+      h_bestimmung(); break;
     case 3:
-      screen = pendel(); break;
+      pendel(); break;
     case 4:
-      screen = schall(); break;
+      schall(); break;
     case 5:
-      screen = luftdruck(); break;
+      luftdruck(); break;
     case 6:
-      screen = spannungsteiler(); break;
+      spannungsteiler(); break;
     case 7:
-      screen = kondensator(); break;
+      kondensator(); break;
     default:
     ;  
   }    
@@ -179,16 +180,16 @@ const char *optionen[] =  {"1. Temperatur/;Luftfeuchtigkeit",
                      "4. Schall"
                     };
       const int anzahlOptionen = 5;
-void lokalAusfuehren(char screen[]){
+void lokalAusfuehren(){
   switch(index){
     case 0:
-      screen = temperatur(); break;
+      temperatur(); break;
     case 1:
-      screen = luftdruck(); break;
+      luftdruck(); break;
     case 2:
-      screen = pendel(); break;
+      pendel(); break;
     case 3:
-      screen = schall(); break;
+      schall(); break;
     default:
     ;  
   }    

@@ -5,7 +5,7 @@
 
 // ***  zusätzliche Optionen   ****
 //#define ERWEITERT
-#if defined(__AVR_ATmega328P__)
+#if defined(__AVR_ATmega328P__)     //Wenn Arduino UNO als Board ausgewählt wurde 
 #define I2CLCD
 #define UNO
 #endif
@@ -22,6 +22,7 @@
 #define ANALOG2 13
 // ***                        ****
 
+extern char str_result[40];
 extern boolean isactive;
 extern boolean tabelle;
 extern boolean MessungDurchfuehren;

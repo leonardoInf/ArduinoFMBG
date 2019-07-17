@@ -1,4 +1,4 @@
-void screenErhalten(char screen[]){
+void screenErhalten(){
   #ifdef ERWEITERT
   memset(screen, 0, 33);
   Wire.requestFrom(2+index, 32);

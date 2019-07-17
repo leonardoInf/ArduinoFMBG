@@ -40,13 +40,13 @@
   }
   
     if(rcvMode){
-       char screen[40];
-       if(index > 10)
-          screenErhalten(screen);
-       else lokalAusfuehren(screen);
-       lcdAusgabe(screen, 3);
+        memset(str_result, 0, 40);     //globales str_result Array mit Nullen füllen (leeren)
+        if(index > 10)
+          screenErhalten();
+       else lokalAusfuehren();
+       lcdAusgabe(str_result, 3);
        #ifdef WLAN
-       sendWifi(screen);
+       sendWifi();
        #endif
        if(handleKeypad(lcd_key)){
           lcdLeeren();

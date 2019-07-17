@@ -1,4 +1,4 @@
-void sendWifi(char str[]){
+void sendWifi(){
   
 }
 
