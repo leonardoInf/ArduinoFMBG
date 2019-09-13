@@ -44,8 +44,8 @@ Daraufhin muss im Boardverwalter das Board ``esp8266`` installiert werden.
 ## Architektur
 ![ArduinoFMBG Softwarearchitektur](Materialien/software-architektur.PNG)
 
-**Grundlegendes:** Die Ausgabe der Messwerte geschieht über die globale bilden ``char[]``-Variable  ``stdr_result``der Länge 40. Sie wird vonn dem derzeit ausgewählten Sensor gefüllt und auf einem  LCD dargestellt. 
-Wenn das ausgewählte Modul die Darstellung auf dem LCD ändern möchte, muss es das entsprechende Array ``str_result[40]`` verändern. Auf Nutzereingaben wird mithilfe von globalen Variablen reagiert.
+**Grundlegendes:** Die Ausgabe der Messwerte geschieht über die globale ``char[]``-Variable  ``str_result``. Sie wird von dem derzeit ausgewählten Sensor gefüllt und auf einem  LCD dargestellt. 
+Wenn das ausgewählte Modul die Darstellung auf dem LCD ändern möchte, muss es das entsprechende Feld ``str_result[40]`` verändern. Auf Nutzereingaben wird mithilfe von globalen Variablen reagiert.
 Die Kommunikation erfolgt über die jeweiligen Dateien ``steuerung_x.h``. 
 
 ``wichtig.h`` Abhängigkeiten, Implementierung der Konfiguration (siehe globals.h), Initialisierung der globalen Variablen, Initialisierung des Menüs
@@ -62,7 +62,7 @@ Die Kommunikation erfolgt über die jeweiligen Dateien ``steuerung_x.h``.
 
 ``loop.h`` Die Hauptschleife. Sie erhält durchgehend Zeichenketten, welche dargestellt werden müssen und fetcht Nutzereingaben
 
-``globals.h`` Enthält Deklarationen globaler Variablen und Optionen zur bedingten Kompilierung.
+``globals.h`` Enthält Deklarationen dee globalen Variablen und Optionen zur bedingten Kompilierung.
 
 ``read.h`` Liest Nutzereingaben ein
 
