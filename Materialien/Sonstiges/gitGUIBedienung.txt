@@ -3,4 +3,4 @@ GIT GUI Befehle
 Rescan: F5			(Auf Änderungen überprüfen)
 Stage: Ctrl+I 		(Änderungen registrieren)
 Commit: Ctrl+Enter 	(Änderungen ins lokale Repository übernehmen)
-Push: 	Ctrl+P		(Änderungen ins Github-Repo übernehmen)
+Push: 	Ctrl+P		(Änderungen ins Github-Repo übernehmen) 
