@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/leonardoInf/ArduinoPhysik.svg?branch=master)](https://travis-ci.org/leonardoInf/ArduinoPhysik)
 
-*Bitte beachten:* Zurzeit scheint es in der "Arduino AVR Boards"-Plattform, einen Bug zu geben. Sie sollten deshalb auf Version 1.6.21 im Boardverwalter downgraden. 
+*Bitte beachten:* Zurzeit scheint es in der "Arduino AVR Boards"-Plattform einen Bug zu geben. Sie sollten deshalb auf Version 1.6.21 im Boardverwalter downgraden. 
 
 Dies ist eine multifunktionale Plattform für den Einsatz von **Arduino-Sensoren im Physikunterricht**.
 
