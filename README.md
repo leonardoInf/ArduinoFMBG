@@ -44,7 +44,7 @@ Daraufhin muss im Boardverwalter das Board ``esp8266`` installiert werden.
 ## Architektur
 ![ArduinoFMBG Softwarearchitektur](Materialien/software-architektur.PNG)
 
-**Grundlegendes:** Die Grundlage bilden char-Arrays der Länge 40. Sie werden von dem derzeit ausgewählten Sensor erbittet und auf dem LCD dargestellt. 
+**Grundlegendes:** Die Grundlage bilden ``char``-Arrays der Länge 40. Sie werden von dem derzeit ausgewählten Sensor erbittet und auf dem LCD dargestellt. 
 Wenn das ausgewählte Modul die Darstellung auf dem LCD ändern möchte, muss es das entsprechende Array ``str_result[40]`` verändern. Auf Nutzereingaben wird mithilfe von globalen Variablen reagiert.
 Die Kommunikation erfolgt über die jeweiligen Dateien ``steuerung_x.h``. 
 
