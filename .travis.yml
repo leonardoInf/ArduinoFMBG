@@ -10,6 +10,7 @@ git:
 env:
   global:
      - PRETTYNAME="ArduinoPhysik"
+  - ARDUINO_HOME=$HOME/arduino_ide
 # Optional, will default to "$TRAVIS_BUILD_DIR/Doxyfile"
 #    - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
 
@@ -17,6 +18,6 @@ before_install:
    - source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
 
 install:
-   - ./deps.sh
+   - ./setup.sh
 script:
    - build_main_platforms
