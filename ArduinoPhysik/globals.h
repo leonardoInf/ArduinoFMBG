@@ -37,15 +37,15 @@ extern boolean allowInput;
 
 #ifndef UNO
 #include <BigNumber.h>
-extern const BigNumber p_max PROGMEM;  // 5 W/m^2
-extern const BigNumber zero PROGMEM;
-extern const BigNumber eins PROGMEM;
-extern const BigNumber vier PROGMEM;
-extern const BigNumber zehn PROGMEM;
-extern const BigNumber neunzehn PROGMEM;
-extern const BigNumber vierunddreissig PROGMEM;
-extern const BigNumber hundert PROGMEM;
-extern const BigNumber materialien[][7] PROGMEM;
+extern const BigNumber p_max;  // 5 W/m^2
+extern const BigNumber zero;
+extern const BigNumber eins;
+extern const BigNumber vier;
+extern const BigNumber zehn;
+extern const BigNumber neunzehn;
+extern const BigNumber vierunddreissig;
+extern const BigNumber hundert;
+extern const BigNumber materialien[][7];
 extern const char* symbole[];
 
 extern BigNumber minus_eins;

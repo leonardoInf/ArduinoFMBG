@@ -17,15 +17,6 @@ before_install:
    - source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
 
 install:
-   - arduino --install-library "Adafruit Unified Sensor"
-   - arduino --install-library "Adafruit GFX Library"
-   - arduino --install-library "Adafruit SSD1306"
-   - arduino --install-library "DHT sensor library"
-   - arduino --install-library "Keypad"
-   - arduino --install-library "HCSR04"
-   - if [ ! -d "$HOME/arduino_ide/libraries/BMP180" ]; then git clone https://github.com/sparkfun/BMP180_Breakout_Arduino_Library.git $HOME/arduino_ide/libraries/BMP180; fi
-   - if [ ! -d "$HOME/arduino_ide/libraries/BigNumber" ]; then git clone https://github.com/leonardoInf/BigNumber.git $HOME/arduino_ide/libraries/BigNumber; fi
-   #- git clone https://github.com/sparkfun/BMP180_Breakout_Arduino_Library.git $HOME/arduino_ide/libraries/BMP180
-   #- git clone https://github.com/leonardoInf/BigNumber.git $HOME/arduino_ide/libraries/BigNumber
+   - ./deps.sh
 script:
    - build_main_platforms

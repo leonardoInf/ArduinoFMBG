@@ -43,15 +43,15 @@
 
 // *** Konstanten und Variablen für die h-Bestimmmung  ***
 #ifndef UNO
-const BigNumber p_max PROGMEM = 5;  // 5 W/m^2
-const BigNumber zero PROGMEM = 0;
-const BigNumber eins PROGMEM = 1;
-const BigNumber vier PROGMEM = 4;
-const BigNumber zehn PROGMEM = 10;
-const BigNumber neunzehn PROGMEM = 19;
-const BigNumber vierunddreissig PROGMEM = 34;
-const BigNumber hundert PROGMEM = 100;
-const BigNumber materialien[][7] PROGMEM = {
+const BigNumber p_max = 5;  // 5 W/m^2
+const BigNumber zero = 0;
+const BigNumber eins = 1;
+const BigNumber vier = 4;
+const BigNumber zehn  = 10;
+const BigNumber neunzehn = 19;
+const BigNumber vierunddreissig = 34;
+const BigNumber hundert = 100;
+const BigNumber materialien[][7] = {
       {1.8, 1.94, 2.25, 2.28, 4.2, 4.27, 4.48}, 
       {0.17, 0.29, 0.18, 0.28, 0.30, 0.21, 0.23},
 };
