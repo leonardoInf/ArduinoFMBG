@@ -10,7 +10,7 @@ git:
 env:
   global:
      - PRETTYNAME="ArduinoPhysik"
-  - ARDUINO_HOME=$HOME/arduino_ide
+     - ARDUINO_HOME=$HOME/arduino_ide
 # Optional, will default to "$TRAVIS_BUILD_DIR/Doxyfile"
 #    - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
 
