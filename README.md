@@ -66,3 +66,4 @@ Die Kommunikation erfolgt über die jeweiligen Dateien ``steuerung_x.h``.
 ``read.h`` Liest Nutzereingaben ein
 
 ``Sensoren.h`` Enthält die Implementierung der einzelnen Skripte für die Sensoren und Module. Je nach Konfiguration werden unt3rschiedliche Module verwendet (u.a. wegen Speicherplatzmängeln auf dem Arudino UNO). 
+
