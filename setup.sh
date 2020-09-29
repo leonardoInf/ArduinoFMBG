@@ -29,4 +29,4 @@ arduino --install-library "HCSR04"
 arduino --install-library "Keypad"
 
 if [ ! -d "$ARDUINO_HOME"/libraries/BMP180 ]; then git clone https://github.com/sparkfun/BMP180_Breakout_Arduino_Library.git "$ARDUINO_HOME"/libraries/BMP180; fi
-f [ ! -d "$ARDUINO_HOME"/libraries/BigNumber ]; then git clone https://github.com/leonardoInf/BigNumber.git "$ARDUINO_HOME"/libraries/BigNumber; fi
+if [ ! -d "$ARDUINO_HOME"/libraries/BigNumber ]; then git clone https://github.com/leonardoInf/BigNumber.git "$ARDUINO_HOME"/libraries/BigNumber; fi
